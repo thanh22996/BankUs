@@ -1,0 +1,36 @@
+.block-footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: #4B4B4B;
+    color: #fff;
+}
+
+
+.slick-next {
+    right: 50px !important;
+    z-index: 2;
+}
+
+.slick-prev {
+    left: 50px !important;
+    z-index: 2;
+}
+
+.block-page-bankus {
+    .block-partner-list {
+        background-color: #F99D1B;
+        .block-partner {
+            justify-content: center;
+            .block-item-partner {
+                margin-bottom: 16px;
+                text-align: center;
+                padding: 100px 0;
+                background-color: #fff;
+                border-radius: 50%;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

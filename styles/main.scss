@@ -1,4 +1,6 @@
 @import "./custom_checkbox.scss";
+@import "./bankus";
+
 * {
   margin: 0;
   padding: 0;
@@ -17,15 +19,6 @@ body {
   z-index: 1;
 }
 
-.slick-next {
-  right: 50px;
-  z-index: 2;
-}
-
-.slick-prev {
-  left: 50px;
-  z-index: 2;
-}
 
 .block-list-menu {
   a {

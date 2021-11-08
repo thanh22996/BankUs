@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from './Footer';
 import Header from './Header';
 
 function MasterLayout(props) {
@@ -6,6 +7,7 @@ function MasterLayout(props) {
         <div className="wrapper-layout">
             <Header />
             {props.children}
+            <Footer />
         </div>
     );
 }
