@@ -1,5 +1,4 @@
 import { Provider } from "react-redux";
-import "react-toastify/dist/ReactToastify.css";
 import "styles/main.scss";
 import { useStore } from "../store";
 import MasterLayout from "layout/MasterLayout";

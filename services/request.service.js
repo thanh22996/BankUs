@@ -1,18 +1,14 @@
 import axios from "axios";
-import ShortId from "shortid";
-import NodeRSA from "node-rsa";
-import CryptoJS from "crypto-js";
-import md5 from "md5";
 import _ from "lodash";
 
 function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-      results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-  }
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return "";
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 
 const Request = {
   callAPI(
@@ -26,7 +22,6 @@ const Request = {
     privateKey = null
   ) {
     return new Promise(async (resolve, reject) => {
-
       const language = "vi";
       try {
         // let lang = language.i18nState.lang
@@ -50,12 +45,11 @@ const Request = {
           ...headers,
           Language: lang,
           "Content-Type": "application/json; charset=utf-8",
-          "Accept":"*"
+          Accept: "*",
         };
 
         let apiBody = args;
         if (isSecurity) {
-
           apiUrl = `${url}${pathUrl}`;
           const encrypt = Request.RequestEncrypt(
             pathUrl,
@@ -66,7 +60,6 @@ const Request = {
           );
           apiHeader = { ...encrypt.headers, ...apiHeader };
           apiBody = encrypt.body;
-
         }
         const option = {
           method,
@@ -80,11 +73,19 @@ const Request = {
         }
 
         const response = await axios(option);
-        if(response.status !== 200 ){
+        if (response.status !== 200) {
           // if (getParameterByName('dev', window.location.search) === 'debug') {
-            console.log({ method, url, pathUrl, args, headers }, response.data || {});
-            // }
-            resolve(response.data || {code: -1001, message: "Lỗi kết nối server, xin vui lòng thử lại sau.",});
+          console.log(
+            { method, url, pathUrl, args, headers },
+            response.data || {}
+          );
+          // }
+          resolve(
+            response.data || {
+              code: -1001,
+              message: "Lỗi kết nối server, xin vui lòng thử lại sau.",
+            }
+          );
         }
 
         if (isSecurity) {
@@ -100,12 +101,12 @@ const Request = {
             privateKey
           );
           // if (getParameterByName('dev', window.location.search) === 'debug') {
-            console.log({ method, url, pathUrl, args, headers }, ketqua);
+          console.log({ method, url, pathUrl, args, headers }, ketqua);
           // }
           return resolve(ketqua);
         }
         // if (getParameterByName('dev', window.location.search) === 'debug') {
-          console.log({ method, url, pathUrl, args, headers }, response);
+        console.log({ method, url, pathUrl, args, headers }, response);
         // }
         resolve(response.data);
       } catch (error) {
