@@ -12,6 +12,14 @@ export function Footer() {
               src="/assets/images/home/logo_1_footer.png"
               alt="logo"
             />
+            <div>
+                <p>Contact us on:</p>
+                <div className="community">
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                </div>
+            </div>
             <p>BANK US alright reserved</p>
           </div>
           <div className="col-md-4">
