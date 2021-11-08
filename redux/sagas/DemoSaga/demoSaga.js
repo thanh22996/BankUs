@@ -38,7 +38,7 @@ function* doAction(action) {
     callback &&
       callback(false, { code: -1001, message: "Connect server error [-1001]" });
     yield put({
-      type: types.LOGIN_EMAILL_FAILURE,
+      type: types.LOGIN_EMAIL_FAILURE,
       payload: {
         error: { code: -1001, message: "Connect server error [-1001]" },
       },
