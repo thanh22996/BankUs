@@ -6,227 +6,41 @@
   font-weight: normal;
 }
 body {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 15px;
-  color: #272b41;
-}
-.cls-container {
-  position: relative;
-  min-height: 100vh;
-  background: url(/assets/images/background-login.svg) no-repeat center;
-  background-size: cover;
-  padding-bottom: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
-  .cls-container-benefit{
-    max-width: 616px;
-    margin: 0 auto;
-  }
-  .contain-wap {
-    max-width: 616px;
-    width: 100%;
-    margin: 0 auto;
-    .header {
-      padding: 75px 0 33px;
-      .logo {
-        justify-content: center;
-      }
-    }
-    .card {
-      border-radius: 20px;
-      box-shadow: 0 20px 46px 0 rgba(0, 0, 0, 0.1);
-      border: none;
-      .card-title {
-        font-size: 28px;
-        font-weight: bold;
-        color: #272b41;
-        max-width: 450px;
-        margin: 20px auto 32px;
-      }
-      .card-verify-email {
-        .card-title {
-          margin-bottom: 16px;
-        }
-        .description {
-          font-size: 15px;
-          color: #4e526c;
-          padding-left: 57px;
-          margin-bottom: 32px;
-          max-width: 450px;
-        }
-      }
-      .card-sign-in {
-        .btn-link {
-          line-height: inherit;
-        }
-      }
-      .card-reset-password {
-        .btn-link {
-          font-weight: 600;
-        }
-      }
-      .card-check-mail {
-        .card-title {
-          max-width: 485px;
-          line-height: 1.25;
-        }
-        .description {
-          font-size: 15px;
-          color: #4e526c;
-          max-width: 485px;
-          margin: 0 auto;
-        }
-      }
-      .form-login {
-        max-width: 450px;
-        width: 100%;
-        margin: 0 auto;
-        .resend-email {
-          font-size: 13px;
-          color: #647081;
-        }
-      }
-    }
-    .block-end-login {
-      padding: 40px 24px;
-      .float-left {
-        > span {
-          color: #272b41;
-          font-weight: bold;
-          font-size: 14px;
-          margin-right: 16px;
-        }
-        > a {
-          font-weight: bold;
-          color: #00be00;
-          font-size: 16px;
-        }
-      }
-      .float-right {
-        display: flex;
-        align-items: center;
-        > img {
-          margin-right: 8px;
-        }
-        > span {
-          font-size: 15px;
-          color: #0b0b0b;
-        }
-      }
-    }
-  }
-  .container-singup {
-    max-width: 1249px;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 67px;
-    .cls-container-benefit {
-      .logo {
-        padding: 53px 0 36px 44px;
-      }
-      .block-benefit {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 40px;
-        > img {
-          margin-right: 24px;
-        }
-        .block-benefit-detail {
-          h2 {
-            font-weight: bold;
-            font-size: 20px;
-            margin-bottom: 9px;
-          }
-          p {
-            font-size: 16px;
-            color: #647081;
-            font-weight: 600;
-            max-width: 483px;
-            margin: 0;
-          }
-        }
-      }
-    }
-    .contain-wap {
-      .card-title {
-        max-width: initial;
-        padding-left: 57px;
-      }
-    }
-  }
-  .footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a,
-    span {
-      color: #647081;
-      font-size: 15px;
-      font-weight: 600;
-    }
-    .dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #a5aeb8;
-    }
-  }
+  font-family: "Montserrat", sans-serif;
 }
 
-.note {
-  font-size: 11px;
-  color: #9299b8;
-  span {
-    color: #ff4b49;
-  }
+.block-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+.slick-next {
+  right: 50px;
+  z-index: 2;
 }
 
-.btn-success {
-  border-radius: 12px;
-  background-color: #00be00;
-  border-color: #00be00;
-  height: 50px;
-  font-size: 18px;
+.slick-prev {
+  left: 50px;
+  z-index: 2;
 }
 
-.form-group {
-  label {
+.block-list-menu {
+  a {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+    color: #8e8e8e !important;
+    font-size: 18px;
     font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 8px;
   }
-  .form-control {
-    line-height: 50px;
-    height: 50px;
-    &:focus {
-      box-shadow: 0 0, 0px 0px 10px #64b864;
-    }
-    &::placeholder {
-      color: #a5aeb8;
-      font-weight: normal;
-      font-size: 16px;
-    }
+  .active {
+    color: #f99d1b !important;
+    font-weight: 700;
   }
 }
 
-.link-forgot {
-  font-weight: normal;
-  font-size: 15px;
-}
-
-.form-check-label {
-  font-weight: 600;
-  font-size: 15px;
-  color: #272b41;
+.block-projects {
+  justify-content: center;
 }
