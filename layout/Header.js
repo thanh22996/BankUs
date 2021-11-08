@@ -16,6 +16,7 @@ function Header(props) {
                 className="me-auto my-2 my-lg-0 block-list-menu"
                 style={{ maxHeight: "100px" }}
                 navbarScroll
+                defaultActiveKey="#home"
               >
                 <Nav.Link href="#home">TRANG CHỦ</Nav.Link>
                 <Nav.Link href="#product">SẢN PHẨM</Nav.Link>

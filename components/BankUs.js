@@ -97,113 +97,123 @@ function BankUs(props) {
       <div className="block-projects-list">
         <div className="container">
           <div className="row block-projects">
-            <div className="col-md-4 block-item-project">
-              <img src="/assets/images/home/mirae.png" alt="image" />
-              <div className="content-project">
-                <div className="content-top">
-                  <div className="content-left">
-                    <p>Vay tiền mặt từ</p>
-                    <p>MIRAE ASSET</p>
+            <div className="col-md-4 mt-4">
+              <div className="block-item-project">
+                <img width="100%" src="/assets/images/home/mirae.png" alt="image" />
+                <div className="content-project">
+                  <div className="content-top">
+                    <div className="content-left">
+                      <p>Vay tiền mặt từ</p>
+                      <p>MIRAE ASSET</p>
+                    </div>
+                    <div className="content-right">
+                      <img src="/assets/images/icons/icon_read_more.png" alt="icon" />
+                    </div>
                   </div>
-                  <div className="content-right">
-                    <img src="" alt="" />
+                  <div className="content-bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque molestie lorem euconsequat gravida. Nunc mattis et
+                      erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
+                      et, pretium ipsum.{" "}
+                    </p>
                   </div>
-                </div>
-                <div className="content-bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque molestie lorem euconsequat gravida. Nunc mattis et
-                    erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
-                    et, pretium ipsum.{" "}
-                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 block-item-project">
-              <img src="/assets/images/home/shb.png" alt="image" />
-              <div className="content-project">
-                <div className="content-top">
-                  <div className="content-left">
-                    <p>Vay tiền mặt từ</p>
-                    <p>MIRAE ASSET</p>
+            <div className="col-md-4 mt-4">
+              <div className="block-item-project">
+                <img width="100%" src="/assets/images/home/shb.png" alt="image" />
+                <div className="content-project">
+                  <div className="content-top">
+                    <div className="content-left">
+                      <p>Vay tiền mặt từ</p>
+                      <p>SHB BANK</p>
+                    </div>
+                    <div className="content-right">
+                      <img src="/assets/images/icons/icon_read_more.png" alt="icon" />
+                    </div>
                   </div>
-                  <div className="content-right">
-                    <img src="" alt="" />
+                  <div className="content-bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque molestie lorem euconsequat gravida. Nunc mattis et
+                      erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
+                      et, pretium ipsum.{" "}
+                    </p>
                   </div>
-                </div>
-                <div className="content-bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque molestie lorem euconsequat gravida. Nunc mattis et
-                    erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
-                    et, pretium ipsum.{" "}
-                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 block-item-project">
-              <img src="/assets/images/home/mcredit.png" alt="image" />
-              <div className="content-project">
-                <div className="content-top">
-                  <div className="content-left">
-                    <p>Vay tiền mặt từ</p>
-                    <p>MIRAE ASSET</p>
+            <div className="col-md-4 mt-4">
+              <div className="block-item-project">
+                <img width="100%" src="/assets/images/home/mcredit.png" alt="image" />
+                <div className="content-project">
+                  <div className="content-top">
+                    <div className="content-left">
+                      <p>Vay tiền mặt từ</p>
+                      <p>MCREDIT</p>
+                    </div>
+                    <div className="content-right">
+                      <img src="/assets/images/icons/icon_read_more.png" alt="icon" />
+                    </div>
                   </div>
-                  <div className="content-right">
-                    <img src="" alt="" />
+                  <div className="content-bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque molestie lorem euconsequat gravida. Nunc mattis et
+                      erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
+                      et, pretium ipsum.{" "}
+                    </p>
                   </div>
-                </div>
-                <div className="content-bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque molestie lorem euconsequat gravida. Nunc mattis et
-                    erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
-                    et, pretium ipsum.{" "}
-                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 block-item-project">
-              <img src="/assets/images/home/easycredit.png" alt="image" />
-              <div className="content-project">
-                <div className="content-top">
-                  <div className="content-left">
-                    <p>Vay tiền mặt từ</p>
-                    <p>MIRAE ASSET</p>
+            <div className="col-md-4 mt-4">
+              <div className="block-item-project">
+                <img width="100%" src="/assets/images/home/easycredit.png" alt="image" />
+                <div className="content-project">
+                  <div className="content-top">
+                    <div className="content-left">
+                      <p>Vay tiền mặt từ</p>
+                      <p>EASY CREDIT</p>
+                    </div>
+                    <div className="content-right">
+                      <img src="/assets/images/icons/icon_read_more.png" alt="icon" />
+                    </div>
                   </div>
-                  <div className="content-right">
-                    <img src="" alt="" />
+                  <div className="content-bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque molestie lorem euconsequat gravida. Nunc mattis et
+                      erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
+                      et, pretium ipsum.{" "}
+                    </p>
                   </div>
-                </div>
-                <div className="content-bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque molestie lorem euconsequat gravida. Nunc mattis et
-                    erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
-                    et, pretium ipsum.{" "}
-                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 block-item-project">
-              <img src="/assets/images/home/ptf.png" alt="image" />
-              <div className="content-project">
-                <div className="content-top">
-                  <div className="content-left">
-                    <p>Vay tiền mặt từ</p>
-                    <p>MIRAE ASSET</p>
+            <div className="col-md-4 mt-4">
+              <div className="block-item-project">
+                <img width="100%" src="/assets/images/home/ptf.png" alt="image" />
+                <div className="content-project">
+                  <div className="content-top">
+                    <div className="content-left">
+                      <p>Vay tiền mặt từ</p>
+                      <p>PTF VIETNAM</p>
+                    </div>
+                    <div className="content-right">
+                      <img src="/assets/images/icons/icon_read_more.png" alt="icon" />
+                    </div>
                   </div>
-                  <div className="content-right">
-                    <img src="" alt="" />
+                  <div className="content-bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque molestie lorem euconsequat gravida. Nunc mattis et
+                      erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
+                      et, pretium ipsum.
+                    </p>
                   </div>
-                </div>
-                <div className="content-bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque molestie lorem euconsequat gravida. Nunc mattis et
-                    erat eu sagittis. Fusce in arcu ullamcorper, fermentum nulla
-                    et, pretium ipsum.
-                  </p>
                 </div>
               </div>
             </div>

@@ -102,4 +102,46 @@ html {
             }
         }
     }
+    .block-projects-list {
+        background-image: url("/assets/images/home/bg_project.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        .block-projects {
+            .block-item-project {
+                background-color: #fff;
+                box-shadow: 0px 8px 33px 12px #ffb46133;
+                border-radius: 15px;
+                overflow: hidden;
+                margin-bottom: 16px;
+                height: 100%;
+                .content-project {
+                    padding: 0 16px;
+                    .content-top {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 10px;
+                        p {
+                            &:nth-child(1) {
+                                font-size: 15px;
+                                color: #000;
+                                margin-bottom: 10px;
+                                font-weight: 500;
+                            }
+                            &:nth-child(2) {
+                                font-size: 24px;
+                                color: #F99D1B;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .content-bottom {
+                        font-size: 15px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
 }
