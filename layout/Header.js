@@ -1,7 +1,13 @@
-import React from "react";
+/* eslint-disable @next/next/link-passhref */
+import React, { useState } from "react";
+import Link from "next/link";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 
 function Header(props) {
+  const [stateActive, setStateActive] = useState("home");
+  const handleActive = (active) => {
+    setStateActive(active);
+  };
   return (
     <div className="block-header">
       <div className="block-menu">
@@ -16,12 +22,40 @@ function Header(props) {
                 className="me-auto my-2 my-lg-0 block-list-menu"
                 style={{ maxHeight: "100px" }}
                 navbarScroll
-                defaultActiveKey="#home"
+                defaultActiveKey="/"
               >
-                <Nav.Link href="#home">TRANG CHỦ</Nav.Link>
-                <Nav.Link href="#product">SẢN PHẨM</Nav.Link>
-                <Nav.Link href="#partner">ĐỐI TÁC</Nav.Link>
-                <Nav.Link href="#contact">LIÊN HỆ</Nav.Link>
+                <Link href="/">
+                  <span
+                    className={stateActive === "home" && "active"}
+                    onClick={() => handleActive("home")}
+                  >
+                    TRANG CHỦ
+                  </span>
+                </Link>
+                <Link href="/products">
+                  <span
+                    className={stateActive === "products" && "active"}
+                    onClick={() => handleActive("products")}
+                  >
+                    SẢN PHẨM
+                  </span>
+                </Link>
+                <Link href="/partner">
+                  <span
+                    className={stateActive === "partner" && "active"}
+                    onClick={(e) => handleActive("partner")}
+                  >
+                    ĐỐI TÁC
+                  </span>
+                </Link>
+                <Link href="/contact">
+                  <span
+                    className={stateActive === "contact" && "active"}
+                    onClick={(e) => handleActive("contact")}
+                  >
+                    LIÊN HỆ
+                  </span>
+                </Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
