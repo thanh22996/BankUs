@@ -7,25 +7,29 @@ export function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <img width="100%" src="/assets/images/logo_1.png" alt="logo" />
+            <img
+              width="100%"
+              src="/assets/images/home/logo_1_footer.png"
+              alt="logo"
+            />
             <p>BANK US alright reserved</p>
           </div>
           <div className="col-md-4">
             <p className="title">LIÊN HỆ</p>
             <p>
-              <span>Email:</span>
+              <span className="mr-2">Email:</span>
               <span>quang.nth@bankus.vn</span>
             </p>
             <p>
-              <span>Khách hàng muốn vay liên hệ: </span>
+              <span className="mr-2">Khách hàng muốn vay liên hệ:</span>
               <span>0904876872 (Ms. Kiều)</span>
             </p>
             <p>
-              <span>Đối tác muốn vay liên hệ:</span>
+              <span className="mr-2">Đối tác muốn vay liên hệ:</span>
               <span>0795079079 (Mr. Quang)</span>
             </p>
             <p>
-              <span>Văn phòng:</span>
+              <span className="mr-2">Văn phòng:</span>
               <span>399 Phạm Văn Bạch, Phường 15, Quận Tân Bình, TPHCM</span>
             </p>
           </div>

@@ -14,7 +14,11 @@ function Header(props) {
         <Navbar className="block-nav" expand="lg">
           <Container fluid>
             <Navbar.Brand href="/">
-              <img width="165px" src="/assets/images/logo_1.png" alt="logo" />
+              <img
+                width="165px"
+                src="/assets/images/home/logo_bankus.png"
+                alt="logo"
+              />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
