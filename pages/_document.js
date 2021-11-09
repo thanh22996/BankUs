@@ -21,16 +21,14 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charSet="utf-8" />
           <link rel="icon" href="/assets/images/logo_1.png" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />
           <meta
             name="description"
             content="Web site created using create-react-app"
           />
-          <title>Bank Us</title>
           <link rel="stylesheet" href="/assets/bootstrap/bootstrap.css" />
+          <link rel="stylesheet" href="/styles/bankus.css" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
